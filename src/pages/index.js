@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-import styles from '@/styles/index.module.css'
+import styles from "@/styles/index.module.css";
 import Navbar from "@/components/navbar/navbar";
 import Subtitle from "@/components/tipography/subtitle/subtitle";
 import Container from "@/components/conteiner/container";
@@ -25,9 +25,21 @@ export default function Home() {
           <div className={styles.session}>
             <Subtitle>Promoções</Subtitle>
             <div className={styles.salecontainer}>
-              <SaleCard />
-              <SaleCard />
-              <SaleCard />
+              <SaleCard 
+              image={"league-of-legends.jpg"} 
+              discount={"30%"} 
+              fullPrice={'50,00'}
+              discountPrice={'45,00'} />
+              <SaleCard 
+              image={"dota-2.jpg"}
+              discount={"40%"} 
+              fullPrice={'25,90'}
+              discountPrice={'10,36'}  />
+              <SaleCard 
+              image={"valorant.jpg"} 
+              discount={"50%"} 
+              fullPrice={'89,90'}
+              discountPrice={'44,95'} />
             </div>
           </div>
           <div className={styles.session}>
